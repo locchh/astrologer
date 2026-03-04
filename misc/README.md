@@ -9,6 +9,6 @@
 |7|Permissions|[✅](tool_permission_callback.py)|
 |8|MCP|[✅](mcp_calculator.py)|
 |9|Hooks|[✅](hooks.py)|
-|10|Skills|[✅](skills.py)|
-|11|Sub Agents|[✅](agents.py)|
+|10|[Skills](https://platform.claude.com/docs/en/agent-sdk/skills)|[✅](skills.py)|
+|11|[Sub Agents](https://platform.claude.com/docs/en/agent-sdk/subagents)|[✅](agents.py)|
 |12|Plugins|[✅](plugin_example.py)|

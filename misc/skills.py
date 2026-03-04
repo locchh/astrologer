@@ -143,7 +143,7 @@ async def execute_skill_todo_scan():
         permission_mode="default",
     )
 
-    prompt = "Scan the codebase for TODO and FIXME comments and save the report"
+    prompt = "Scan the codebase for TODO and FIXME comments and save the report. Save the report to ./todo-scan.txt"
 
     async with ClaudeSDKClient(options) as client:
         await client.query(prompt)

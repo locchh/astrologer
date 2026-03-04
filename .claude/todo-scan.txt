@@ -1,8 +1,0 @@
-TODO/FIXME Scan — 2026-03-04
-
-Found 1 item:
-
-./skills.py:149 —     prompt = "Scan the codebase for TODO and FIXME comments and save the report"
-
-Note: The single match above is a string literal inside skills.py (a prompt description),
-not an actual TODO/FIXME task comment. The codebase is effectively clean.

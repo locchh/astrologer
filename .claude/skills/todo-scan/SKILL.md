@@ -23,4 +23,4 @@ Found <N> items:
 (none found — clean codebase!)  ← use this if empty
 ```
 
-Use the Write tool to save the file. Tell the user it was saved to `.claude/todo-scan.txt`.
+Use the Write tool to save the file.

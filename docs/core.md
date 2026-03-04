@@ -77,6 +77,41 @@ DELETE /sessions   → cleanup
 - One `ClaudeSDKClient` per session
 - wait-for-full-result
 
+## UI Flow
+
+The UI maintains a single persistent SSE connection for the lifetime of the session.
+
+```ascii
+┌─────────────────────────────────────────────────────────────┐
+│  Chat UI                                                     │
+│                                                              │
+│  1. User types initial prompt → POST /sessions               │
+│     ← { run_id }                                             │
+│                                                              │
+│  2. Open SSE connection → GET /sessions/{id}/stream          │
+│     ← { type: "assistant", text: "What is your gender?" }   │
+│     ← { type: "idle", files: [] }   ← show input box        │
+│                                                              │
+│  3. User types answer → POST /sessions/{id}/input            │
+│     ← { type: "assistant", text: "What time were you born?" }│
+│     ← { type: "idle", files: [] }   ← show input box        │
+│                                                              │
+│  4. ... repeat until Claude finishes ...                     │
+│     ← { type: "idle", files: ["fortune.md", ...] }          │
+│        ← show download links for output files                │
+│                                                              │
+│  5. Session complete → DELETE /sessions/{id}                 │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Key UI Rules
+
+- **Show input box** only when `type === "idle"` is received
+- **Disable input box** immediately after user submits (session goes RUNNING)
+- **Show file links** when `idle.files` is non-empty — fetch via `GET /sessions/{id}/files/{name}`
+- **Handle `type === "result"`** — session has finished, close SSE connection
+- **Handle `type === "error"`** — display error, disable input
+
 ## Message Types
 
 Message Hierarchy:

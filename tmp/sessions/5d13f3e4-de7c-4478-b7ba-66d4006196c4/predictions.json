@@ -1,0 +1,31 @@
+{
+  "subject": {
+    "zodiac": "Taurus",
+    "life_path": 3,
+    "element": "Metal",
+    "sex": "male",
+    "birth_date": "1990-05-15",
+    "birth_city": "Vi Thanh, Vietnam",
+    "birth_time": "unknown"
+  },
+  "predictions": {
+    "career": {
+      "outlook": "positive",
+      "message": "A crossroads between structure and creation approaches. The fusion of Metal's discipline and the Three's creative impulse will forge your greatest opportunity yet — seek or build work that demands both iron rigor and soaring vision. The stars strongly favor entrepreneurial or inventive endeavors in the near term."
+    },
+    "love": {
+      "outlook": "positive",
+      "message": "Deep Taurus devotion anchors you, but Metal's rigidity risks raising walls around a warm heart. The stars favor an opening — an act of deliberate vulnerability — that will transform an existing bond or invite a new and enduring one. The window is near. Do not hesitate when it appears."
+    },
+    "health": {
+      "outlook": "neutral",
+      "message": "A resilient constitution built of Earth and Metal ensures strong baseline vitality. However, the throat, neck, lungs, and respiratory system require ongoing care — Taurus and Metal both govern these zones. Prioritize breath-work, vocal rest in cold seasons, and neck mobility. Autumn is a critical recovery period each year."
+    },
+    "luck": {
+      "lucky_numbers": [3, 5, 15, 30],
+      "lucky_color": "Gold",
+      "message": "Gold amplifies Metal's focused clarity and the Three's radiant creative energy. Numbers 3 and 5 resonate with your life path and birth month; 15 and 30 echo your birth date and its numerological reduction. Carry or wear gold when making important decisions."
+    }
+  },
+  "warning": "The Number Three scatters as readily as it creates — a thousand brilliant beginnings and no endings. The greatest danger to your destiny is not failure, but beautiful distraction. Guard your focus as you guard your loyalty. The stars warn: finish what you begin, or their gifts will slip like river water through open hands."
+}

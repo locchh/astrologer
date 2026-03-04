@@ -1,0 +1,31 @@
+{
+  "subject": {
+    "zodiac": "Taurus",
+    "life_path": 3,
+    "element": "Metal",
+    "sex": "Male",
+    "birth_date": "1990-05-15",
+    "birth_time": "07:00",
+    "birth_city": "Hanoi, Vietnam"
+  },
+  "predictions": {
+    "career": {
+      "outlook": "positive",
+      "message": "A period of transformation approaches like metal forged in flame. The convergence of your Taurus discipline and Life Path 3 creativity will produce a significant professional breakthrough in the coming cycle. Structured challenges are your forge — embrace them without flinching. Finance, engineering, and creative leadership are your strongest domains."
+    },
+    "love": {
+      "outlook": "positive",
+      "message": "Venus blesses the Taurus heart with fierce, enduring loyalty. A compassionate soul whose elemental energy complements yours is drawing near — look for one who moves gently but with great inner depth. The key: release the stubbornness that keeps old wounds locked inside. When you open your hands, what you have been waiting for will finally arrive."
+    },
+    "health": {
+      "outlook": "neutral",
+      "message": "Your morning birth and Metal constitution grant strong baseline vitality, but tension accumulates silently in the chest, spine, and jaw. Prioritise breathwork, regular movement, and emotional expression. What you refuse to say, your body will eventually say for you. Prevention through honesty is your medicine."
+    },
+    "luck": {
+      "lucky_numbers": [3, 5, 15, 33, 90],
+      "lucky_color": "Gold",
+      "message": "Gold resonates with your Metal essence and the radiant warmth of Life Path 3. The numbers 3 and 5 are recurring beacons through your destiny — notice when they surface in dates, addresses, and decisions. Trust those moments."
+    }
+  },
+  "warning": "Beware the fortress of your own making. Taurus stubbornness amplified by Metal's rigidity can cause you to hold your ground long past the moment when wisdom calls for retreat or reinvention. Flexibility is not weakness — it is the mark of the true master craftsman. The mountain that refuses to yield to all forces does not endure; it eventually shatters."
+}

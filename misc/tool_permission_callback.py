@@ -44,7 +44,7 @@ async def my_permission_callback(
     # Deny write operations to system directories
     # https://platform.claude.com/docs/en/agent-sdk/python#edit
     if tool_name in ["Write", "Edit", "MultiEdit"]:
-        file_path = input_data.get("file_path", "")
+        
         if file_path.startswith("/etc/") or file_path.startswith("/usr/"):
             print(f"   ❌ Denying write to system directory: {file_path}")
             return PermissionResultDeny(

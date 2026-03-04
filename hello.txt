@@ -1,2 +1,4 @@
-Hello, World!
-Hello Claude!
+Hello, World! 👋
+
+Welcome! This is a simple greeting message.
+Have a wonderful day!

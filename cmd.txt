@@ -1,0 +1,1 @@
+claude mcp add-json "a2a-bridge" '{"command":"npx","args":["-y","@regismesquita/mcp_a2a"]}'

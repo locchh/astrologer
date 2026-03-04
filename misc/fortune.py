@@ -21,6 +21,7 @@ from claude_agent_sdk import (
     ToolPermissionContext,
 )
 
+SESSION_ID = None
 PROJECT_ROOT = Path(__file__).parent.parent
 
 
@@ -72,6 +73,7 @@ async def do_fortune():
             last_text = ""
 
             async for message in client.receive_response():
+                
                 if isinstance(message, AssistantMessage):
                     for block in message.content:
                         if isinstance(block, TextBlock):
@@ -81,18 +83,20 @@ async def do_fortune():
                             print(f"\n🔧 {block.name}: {json.dumps(block.input, indent=2)}")
 
                 elif isinstance(message, ResultMessage):
-                    # Check if output was generated — if so, we're done
-                    if (PROJECT_ROOT / output_dir).exists():
+                    SESSION_ID = message.session_id
+                    # Done only when fortune.md is written
+                    if (PROJECT_ROOT / output_dir / "fortune.md").exists():
                         print(f"\n✅ Done! ({message.duration_ms}ms)")
                         print(f"📁 Fortune saved to: {output_dir}/")
+                        print(f"Session ID: {SESSION_ID}")
                         return
 
-            # Output not generated yet — Claude must need more input
-            if not (PROJECT_ROOT / output_dir).exists():
-                answer = input("\n👤 You: ").strip()
-                await client.query(answer)
-            else:
-                break
+            # Claude needs more input — let user respond or exit
+            answer = input("\n👤 You (or 'exit' to quit): ").strip()
+            if answer.lower() == "exit":
+                print("Goodbye!")
+                return
+            await client.query(answer)
 
 
 async def main():

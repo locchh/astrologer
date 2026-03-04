@@ -1,6 +1,4 @@
 import uuid
-import asyncio
-from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions
 from .models import SessionStatus
 
 

@@ -7,7 +7,7 @@
 |5|Tools|[✅](quick_start.py)|
 |6|Permissions|[✅](tool_permission_callback.py)|
 |7|MCP|[✅](mcp_calculator.py)|
-|8|Hooks||
-|9|Skills||
-|10|Sub Agents|[]|
+|8|Hooks|[✅](hooks.py)|
+|9|Skills|[✅](skills.py)|
+|10|Sub Agents|[✅](agents.py)|
 |11|Plugins|[✅](plugin_example.py)|

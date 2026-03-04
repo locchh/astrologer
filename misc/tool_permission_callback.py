@@ -42,6 +42,7 @@ async def my_permission_callback(
         return PermissionResultAllow()
 
     # Deny write operations to system directories
+    # https://platform.claude.com/docs/en/agent-sdk/python#edit
     if tool_name in ["Write", "Edit", "MultiEdit"]:
         file_path = input_data.get("file_path", "")
         if file_path.startswith("/etc/") or file_path.startswith("/usr/"):
@@ -148,3 +149,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

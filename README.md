@@ -16,6 +16,8 @@ set -a && source .env && set +a && claude --model ${MODEL_NAME}
 
 ## References
 
+https://platform.claude.com/docs/en/agent-sdk/python#tool-input-output-types
+
 https://platform.claude.com/docs/en/agent-sdk/python
 
 https://github.com/anthropics/claude-agent-sdk-python

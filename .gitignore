@@ -202,4 +202,4 @@ logs/
 proxy.*.log
 
 # Claude AI related
-.claude/
+#.claude/

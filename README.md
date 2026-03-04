@@ -25,5 +25,6 @@ set -a && source .env && set +a && claude --model ${MODEL_NAME}
 
 ### Code & Libraries
 - **[claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python)** - Official Python SDK
-- **[FastMCP](https://fastmcp.me/MCP/Details/981/a2a-bridge)** - MCP framework with A2A bridge
-- **[MCP A2A](https://github.com/regismesquita/MCP_A2A/tree/main)** - Agent-to-agent communication
+- **[FastMCP - A2A-brigde](https://fastmcp.me/MCP/Details/981/a2a-bridge)** - MCP framework with A2A bridge
+- **[MCPMarket - A2A-brigde](https://mcpmarket.com/server/a2a-bridge)**
+- **[regismesquita - MCP_A2A](https://github.com/regismesquita/MCP_A2A/tree/main)** - Agent-to-agent communication

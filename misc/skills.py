@@ -104,7 +104,7 @@ async def execute_skill_snapshot():
     prompt = textwrap.dedent(f"""
             Show me the snapshot skill
             Then use it to generate a snapshot of the current project
-            Save the snapshot to tmp/session_{session_id}/snapshot.md
+            Save the snapshot to tmp/sessions/session_{session_id}/snapshot.md
             If the session directory does not exist, create it first
         """)
 

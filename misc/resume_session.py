@@ -1,6 +1,6 @@
 import anyio
 import os
-import uuid
+import sys
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -15,23 +15,25 @@ from claude_agent_sdk import (
     ClaudeSDKClient,
 )
 
+# Session ID to resume
+session_id = sys.argv[1] #"11ece7bb-61cc-4374-8800-663bfc9e2932"
 
 async def resume_session():
 
-    session_id = "11ece7bb-61cc-4374-8800-663bfc9e2932"
     print(f"=== Resuming session {session_id} ===")
 
     options = ClaudeAgentOptions(
         resume=session_id,
     )
 
-    async with ClaudeSDKClient(options=options) as client:                                                         
-      await client.query("What's my name? (You should remember from earlier.)")                                  
-      async for message in client.receive_response():                                                            
-          if isinstance(message, AssistantMessage):                                                              
-              for block in message.content:                 
-                  if isinstance(block, TextBlock):
-                      print(f"Claude: {block.text}")
+    async with ClaudeSDKClient(options=options) as client:
+        await client.query("Can you summarize what we did?")
+        async for message in client.receive_response():
+            if isinstance(message, AssistantMessage):
+                for block in message.content:
+                    if isinstance(block, TextBlock):
+                        print(f"Claude: {block.text}")
+
 
 async def main():
     await resume_session()

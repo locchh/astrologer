@@ -1,6 +1,6 @@
 """
 source .env
-.venv/bin/python -m uvicorn src.main:app --host ${BACKEND_HOST} --port ${BACKEND_PORT}
+.venv/bin/python -m uvicorn astrologer.main:app --host ${BACKEND_HOST} --port ${BACKEND_PORT}
 """
 
 import os

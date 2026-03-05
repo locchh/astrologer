@@ -1,7 +1,0 @@
-{
-  "http://localhost:8080": {
-    "url": "http://localhost:8080",
-    "name": "Assistant",
-    "description": "A helpful assistant that can answer questions and perform tasks."
-  }
-}

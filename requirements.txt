@@ -6,6 +6,3 @@ uvicorn[standard]
 httpx
 python-dotenv
 claude-agent-sdk
-a2a-sdk[http-server]
-mcp
-fastmcp
